@@ -1,0 +1,21 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "compile": "node-sass-chokidar --output css scss",
+    "sass": "node-sass-chokidar --watch --output css --source-map true --source-map-contents --include-path node_modules --importer node_modules/node-sass-import scss",
+    "serve": "node server.js",
+    "start": "npm-run-all --parallel serve sass"
+  },
+  "dependencies": {
+    "node-sass-chokidar": "^1.2.2",
+    "node-sass-import": "^2.0.0",
+    "normalize-scss": "^7.0.1"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.0",
+    "npm-run-all": "^4.1.2"
+  }
+}

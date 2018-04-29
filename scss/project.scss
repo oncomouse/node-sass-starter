@@ -1,0 +1,6 @@
+@import "normalize-scss";
+@include normalize();
+$h1Color: #00f;
+h1 {
+    color: $h1Color;
+}
